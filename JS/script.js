@@ -242,6 +242,27 @@ function compareNum(a, b){
 }
 console.log(mass);
 
+//вывести в консоль пользователей возраст которых больше 18-ти лет
+const people = [
+    {name: "anastasia", age: "20", budget: "3444"},
+    {name: "aleks", age: "17", budget: "32444"},
+    {name: "masha", age: "38", budget: "324442"},
+    {name: "vasya", age: "15", budget: "132444"}
+];
+//с помощью цикла
+const age = [];
+for (let i = 0; i < people.length; i++ ){
+    if (people[i].age >= 18) {
+        age.push(people[i])
+    }
+};
+console.log(age);
+//с помощью метода Filter
+const ages = people.filter(person => {
+    if (person.age >= 18)
+    return true;
+});
+
 //объекты
 
 //перебрать объект с помощью for in
