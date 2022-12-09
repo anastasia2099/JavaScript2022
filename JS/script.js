@@ -263,6 +263,18 @@ const ages = people.filter(person => {
     return true;
 });
 
+//посчитать общую сумму елемена массива бюджет
+//с помощью цикла
+const amount = 0;
+for (let i = 0; i < people.length; i++){
+    amount += people[i].budget;
+};
+console.log(amount);
+//c помощью метода Reduce 
+const amounts = people.reduce((total, person) => {
+    return total + person.budget;
+}, 0);
+
 //объекты
 
 //перебрать объект с помощью for in
