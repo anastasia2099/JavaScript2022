@@ -116,3 +116,64 @@ do {
 //  rates = prompt ("насколько оцените его?");
 //lastFolms++;
  } while (lastFolms++ > 2);
+
+
+
+ function sumInput(){
+  let mass = [];
+  for(let i=0; i < 5; i++) {
+    arr[i] = prompt ("Please input value"); // Заполняем массив
+    if(mass[i] === null) { // если  нажимаем "Отмена"
+        alert('Отмена');
+        return;
+    } else if (arr[i] === '') { // если  имя не введено
+        alert('Вы не указали имя');
+        mass[i] = prompt('Введите любое имя'); 
+    }
+ }}
+
+
+ const names = [345, 456, 112, 3];
+ let max; 
+ for (let i = 0; i<names.length; i++){
+  if (names[i] > max)
+   {max = names[i];}
+   else {}
+ };
+ console.log(max);
+
+
+ const users = ["Ваня", "Иштван"];
+ users.push("Olya");
+ users[1] = "Petya";
+ users.shift[1];
+ users.unshift("Masha", "Pasha");
+ console.log(users);
+
+//удалить из елемента массива и вернуть его в переменную
+let arr = ['Vanya', 'Ischtvan', 'Olya'];
+let remove = arr.splice(1,1);
+console.log(remove);
+
+//сделать из строки массив
+let str = 'Vanya, Masha, Sasha';
+let arr = str.split(',');
+console.log(arr);
+//сделать из массива строку с помощью join
+
+let arr = [2, 5, 3, 9];
+//let result;
+for( let i = 0; i < arr.length; ++i){
+  if (i < arr.length - 1) {
+    console.log (arr[i]*2);
+  }
+}
+
+console.log(result);
+
+
+let uno = [1, 2, 3, "a", "b", 7, 8, "f"];
+let map1 = uno.map(function(x){
+  return x * 2;
+});
+console.log(map1);

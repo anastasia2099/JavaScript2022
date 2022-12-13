@@ -274,6 +274,26 @@ console.log(amount);
 const amounts = people.reduce((total, person) => {
     return total + person.budget;
 }, 0);
+/удалить из елемента массива и вернуть его в переменную
+let arr = ['Vanya', 'Ischtvan', 'Olya'];
+let remove = arr.splice(1,1);
+console.log(remove);
+
+//сделать из строки массив
+let str = 'Vanya, Masha, Sasha';
+let arr = str.split(',');
+console.log(arr);
+//сделать из массива строку с помощью join
+
+let arr = [2, 5, 3, 9];
+//let result;
+for( let i = 0; i < arr.length; ++i){
+  if (i < arr.length - 1) {
+    console.log (arr[i]*2);
+  }
+}
+
+console.log(result);
 
 //объекты
 
